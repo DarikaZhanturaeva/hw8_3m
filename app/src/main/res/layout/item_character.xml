@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/border"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/img_character"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <TextView
+        android:id="@+id/tv_life"
+        android:layout_marginTop="15dp"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/img_character"
+        app:layout_constraintTop_toBottomOf="@id/img_character"
+        tools:text="mmmmmmmm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tv_life"
+        app:layout_constraintTop_toBottomOf="@id/tv_life"
+        tools:text="Mmmmmmmm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
